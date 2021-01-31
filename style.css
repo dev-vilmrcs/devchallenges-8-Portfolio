@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+button,
+a,
+li {
+  font: inherit;
+}
+
+body {
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+
+.float-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0.5rem 0.7rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  background: #dddddd;
+  border-radius: 10px;
+}
+
+.float-button:hover {
+  opacity: 0.8;
+}
+
+.float-button a {
+  color: #000;
+}
+
+main {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+}
+
+.container-fuild {
+  width: 90%;
+  min-height: 100vh;
+  margin: 1rem auto;
+}
+
+.container-fuild > div,
+.container-fuild > div > div {
+  margin-bottom: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  background: #fff;
+  /* margin: 1rem 0; */
+  border-radius: 10px;
+}
+
+/* Profile */
+
+.profile-pic-container {
+  max-width: 20rem;
+  margin: auto;
+}
+
+.profile-pic-container img {
+  border-radius: 10px;
+}
+
+.name-job,
+.email-phone,
+.sayings {
+  margin: 1rem 0;
+}
+
+/* Skills */
+
+.skills > div > div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+
+.skills > div > div > p {
+  width: 40%;
+}
+
+.skills > div > div > div {
+  width: 50%;
+}
+
+.progress-bar {
+  background: #c4c4c4;
+  height: 0.9rem;
+  border-radius: 10px;
+}
+
+.percent {
+  background: #2f80ed;
+  height: 0.9rem;
+  border-radius: 10px;
+  width: 0;
+}
+
+.skills .react .percent {
+  width: 50%;
+}
+.skills .javascript .percent {
+  width: 70%;
+}
+.skills .css .percent {
+  width: 60%;
+}
+.skills .vue .percent {
+  width: 80%;
+}
+.skills .redux .percent {
+  width: 90%;
+}
+.skills .reactnative .percent {
+  width: 40%;
+}
+.skills .vue .percent {
+  width: 20%;
+}
+
+/* Hobbies */
+
+.hobby {
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+}
+
+.hobby > div {
+  height: 10rem;
+  border-radius: 10px;
+}
+
+.game {
+  background: url('img/game.jpg') no-repeat center center/cover;
+}
+
+.cooking {
+  background: url('img/cook.jpg') no-repeat center center/cover;
+}
+
+.bike {
+  background: url('img/bike.jpg') no-repeat center center/cover;
+}
+
+.hobby h3 {
+  margin-top: 0.5rem;
+}
+
+/* Projects */
+
+.nav-project h3 {
+  margin-bottom: 0.7rem;
+}
+
+.nav-project button {
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.7rem;
+  border-radius: 10px;
+  margin-right: 0.2rem;
+}
+
+.nav-project .active {
+}
+
+.project .img-container {
+  height: 15rem;
+  width: 100%;
+}
+
+.recipe-blog .img-container {
+  background: url('img/recipe.png') no-repeat center center/contain;
+}
+
+.gallery-blog .img-container {
+  background: url('img/my-gallery.png') no-repeat center center/contain;
+}
+
+.checkout-blog .img-container {
+  background: url('img/checkout.png') no-repeat center center/contain;
+}
+
+.project .tags {
+  display: flex;
+}
+
+.project .tags p {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.project .description {
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+.btn-grp {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem 0.7rem;
+  background: #5c94e1;
+  color: #fff;
+}
+
+.btn-outline {
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem 0.7rem;
+  background: #fff;
+  color: #5c94e1;
+  border: 1px solid #5c94e1;
+}
+
+.btn {
+  width: 100%;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.pagination button {
+  padding: 0.1rem;
+  outline: none;
+  border: 1px solid #4f4f4f;
+  border-radius: 3px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.pagination a {
+  padding: 0.5rem;
+  color: #4f4f4f;
+}
+
+.pagination .active {
+  background: #5c94e1;
+  color: #fff;
+  border: 1px solid #5c94e1;
+}
+
+.pagination .active a {
+  color: #fff;
+  padding: 0.5rem;
+}
+
+/* BLOG */
+
+#blog .title {
+  color: #8c8c8c;
+  font-weight: 400;
+}
+
+.how-to {
+  margin: 1rem 0;
+}
+
+#blog .img-container {
+  width: 100%;
+  min-height: 10rem;
+  background: url('img/desktop.jpg') no-repeat center center/cover;
+  border-radius: 10px;
+}
+
+#blog .article {
+  text-align: justify;
+  margin: 1rem 0;
+}
+
+.dev-io {
+  color: #5c94e1;
+  font-weight: 500;
+}
+
+.exp-container .img-cont {
+  width: 6rem;
+  margin: 1rem auto;
+}
+
+.exp-container > p {
+  margin: 1rem 0;
+}
+
+.exp-container .year,
+.exp-container .desc {
+  color: #828282;
+}
+
+.exp-container .job {
+  font-weight: bold;
+}
+
+.exp-container .desc {
+  text-align: justify;
+}

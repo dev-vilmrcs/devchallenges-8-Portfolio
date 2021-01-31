@@ -1,0 +1,61 @@
+@media (min-width: 1000px) {
+  .container-fuild {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, fit-content(auto));
+    column-gap: 1rem;
+    row-gap: 2rem;
+    justify-items: stretch;
+    align-items: flex-start;
+  }
+
+  
+.container-fuild > div,
+.container-fuild > div > div {
+  /* margin-bottom: auto; */
+}
+
+  .first-col {
+    grid-column: 1 / 2;
+  }
+
+  .second-col {
+    grid-column: 2 / span 2;
+  }
+
+  .first-col > div,
+  .second-col > div,
+  #projects > div,
+  .project > div {
+    margin-bottom: 1rem;
+  }
+
+  .skill-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .skills {
+    width: 49%;
+  }
+
+  .project > .card > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+  .project > .card > div >div:nth-child(1){
+    width: 30%;
+  }
+  .project > .card > div >div:nth-child(2){
+    width: 65%;
+  }
+
+  .project .img-container {
+    border-radius: 10px;
+  }
+
+  
+}
